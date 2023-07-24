@@ -1,0 +1,263 @@
+<header class="nav-height">
+    <nav class="navbar navbar-expand p-0 fixed-top navbar-light bg-white shadow-sm" aria-label="Main navigation">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img class="d-inline-block menu-logo" src="assets/img/NighwanTechnology_logo.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-center ml-auto h-100 position-relative" style="font-size: 0.875rem;">
+                <span class="text-muted" style="font-weight: bold; font-size: 13px;">Branch :</span>
+                <a href="javascript:;" id="lnkBranchSelection" class="option-dots text-muted" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <span id="lblCurrBranchName">Lighwan Tech Pvt Ltd</span>
+                    <i class="fa fa-angle-down"></i> 
+                </a>
+                <div id="dvBranchList" class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                    <div class="row m-0 p-0 d-flex justify-content-between" style="width: 200px;">
+
+                        <div class="col-md-12 fy-hover pointerCur" onclick="onBranchSelect(35426, 'Nighwan Technology'); return false; ">
+                            <div class="form-group mt-1 mb-1 p-1 pointerCur">
+                                <a href="javascript:;">
+                                    <label class="pointerCur">Nighwan Technology</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 fy-hover pointerCur" onclick="onBranchSelect(46293, 'NTPL'); return false; ">
+                            <div class="form-group mt-1 mb-1 p-1 pointerCur">
+                                <a href="javascript:;">
+                                    <label class="pointerCur">NTPL </label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 fy-hover pointerCur" onclick="onBranchSelect(51437, 'Ng Tech'); return false; ">
+                            <div class="form-group mt-1 mb-1 p-1 pointerCur">
+                                <a href="javascript:;">
+                                    <label class="pointerCur">NG Tech</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 fy-hover pointerCur" onclick="onBranchSelect(84509, 'test123'); return false; ">
+                            <div class="form-group mt-1 mb-1 p-1 pointerCur">
+                                <a href="javascript:;">
+                                    <label class="pointerCur">test123</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-right ml-auto h-100">
+                <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
+                    <li class="dropdown user-profile align-self-center d-inline-block">
+                        <a href="#" id="aDrp" class="nav-link py-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" title="User">
+                            <div class="media align-middle user-profile">
+                                <i class="fa fa-user-circle-o me-1 align-middle"></i>
+                                <span id="lblUserName" style="font-size: 0.875rem;">Niraj Kumar</span>
+                                <i class="fa fa-angle-down ms-2"></i>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                            <li>
+                                <a class="dropdown-item current" aria-current="true" href="#"><small>Change Passowrd</small></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="onSignOutClick(); return false;"><small>Sign Out</small></a></li>
+
+                            <a id="lnkSignout" href="javascript:__doPostBack('ctl00$lnkSignout','')" style="display: none;">Log Out</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <nav id="sidebar-menu" class="d-md-block bg-light sidebar border shadow position-fixed" >
+        <div id="dvLeftMenu" class="pt-3 position-absolute default-menu">
+            <ul class="sidebar-menu" appSidebarMenu>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-edit"></i><span>Customs</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li>
+                            <a href="#">
+                                <span>Imports</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#">Job Listing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Create Ex-Bond Job</a>
+                                </li>
+                                <li>
+                                    <a href="#">Job Update</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery Challan</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Masters</span>
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="#">License Master</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SVB Master</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Supporting Document Master</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Certificate Master</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bond Master</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customer Master</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Reports</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Register</span>
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="#">Bond Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CDEC Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Certificate Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CheckList</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delivery Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Import DSR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Import Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">In/Ex Bond Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Job Listing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Job Milestone</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">License Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">STPI Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SVB Register</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Exports</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#">Job Listing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Create Job</a>
+                                </li>
+                                <li>
+                                    <a href="#">Job Update</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Masters</span>
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="#">License Master</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Supporting Document Master</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user-circle-o"></i><span>Admin</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li>
+                            <a href="#">
+                                <span>Organization Profile</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="nav-item">
+                                    <a href="organ">Organization</a>
+                                    <a routerLink="add" class="nav-link" routerLinkActive="active">Organization</a>
+                                </li>
+                                <li>
+                                    <a href="#">Branches</a>
+                                </li>
+                                <li>
+                                    <a href="#">COC Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Configuration</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="#">Financial Year</a>
+                                </li>
+                                <li>
+                                    <a href="#">Job Sequence</a>
+                                </li>
+                                <li>
+                                    <a href="#">Numbering Sequence</a>
+                                </li>
+                                <li>
+                                    <a href="#">Document Master</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
