@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SideNevComponent } from './side-nev/side-nev.component';
-import { SidebarMenuDirective } from './sidebar-menu.directive'; 
+import { SidebarMenuDirective } from './sidebar-menu.directive';
+import { OrganisationComponent } from './Profile/organisation/organisation.component'; 
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SidebarMenuDirective } from './sidebar-menu.directive';
     HeaderComponent,
     FooterComponent,
     SideNevComponent,
-    SidebarMenuDirective
+    SidebarMenuDirective,
+    OrganisationComponent
   ],
   imports: [
     BrowserModule,
