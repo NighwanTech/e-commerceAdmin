@@ -9,7 +9,7 @@
             <div class="navbar-center ml-auto h-100 position-relative" style="font-size: 0.875rem;">
                 <span class="text-muted" style="font-weight: bold; font-size: 13px;">Branch :</span>
                 <a href="javascript:;" id="lnkBranchSelection" class="option-dots text-muted" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                    <span id="lblCurrBranchName">Lighwan Tech Pvt Ltd</span>
+                    <span id="lblCurrBranchName">Nighwan Tech Pvt Ltd</span>
                     <i class="fa fa-angle-down"></i> 
                 </a>
                 <div id="dvBranchList" class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
@@ -78,27 +78,30 @@
             <ul class="sidebar-menu" appSidebarMenu>
                 <li>
                     <a href="#">
-                        <i class="fa fa-edit"></i><span>Customs</span>
+                        <i class="fa fa-edit"></i><span>Admin</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="sidebar-submenu">
                         <li>
                             <a href="#">
-                                <span>Imports</span>
+                                <span>Profile</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="sidebar-submenu">
                                 <li>
-                                    <a href="#">Job Listing</a>
+                                    <a href="#">Organisation</a>
                                 </li>
                                 <li>
-                                    <a href="#">Create Ex-Bond Job</a>
+                                    <a href="#">Organisation Office</a>
                                 </li>
                                 <li>
-                                    <a href="#">Job Update</a>
+                                    <a href="#">Vendor</a>
                                 </li>
                                 <li>
-                                    <a href="#">Delivery Challan</a>
+                                    <a href="#">User Registration</a>
+                                </li>
+                                <li>
+                                    <a href="#">Address</a>
                                 </li>
                                 <li>
                                     <a href="#">
@@ -261,3 +264,71 @@
         </div>
     </nav>
 </header>
+
+<main class="container-fluid">
+    <div class="breadcrumb-wraper">
+        <div class="row m-0 p-0 mb-2 justify-content-between">
+            <div class="col-md-4 p-0 m-0 text-lg-start">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Customs</a></li>
+                        <li class="breadcrumb-item"><a href="#">Imports</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Jobs Listing</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-4 p-0 m-0 text-lg-end">
+                <div class="row">
+                    <div class="col m-2 text-end action">
+                        <a href="#" class="text-decoration-none  me-2 txt-black-light">
+                            <i class="fa fa-lightbulb-o ps-1 pe-1"></i>Sugestions</a>
+                            <a href="#" class="text-decoration-none ms-2 txt-black-light">
+                                <i class="fa fa-headphones ps-1 pe-1"></i>Support</a>
+                                 <a href="#" class="text-decoration-none ms-2 txt-black-light">
+                                  <i class="fa fa-question-circle-o ps-1 pe-1"></i>Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mb-5 base-container">
+        <div class="row m-0">
+            <div class="container text-center">
+                <div class="row mt-4 align-items-end">
+                    <div class="col-md-12">
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 p-0 m-0 text-lg-start">
+                                <h5 class="text-black">ADMIN</h5>
+                            </div>
+                        </div>
+                        <div class="row p-0 mb-2 ustify-content-between">
+                            <div class="col-9 m-0 p-0 text-lg-start">
+                                <div class="myTabs">
+                                    <div class="tabsTitle">
+                                        <a class="tabButton">Profile</a>
+                                        <a class="tabButton">inventory</a>
+                                        <a class="tabButton">invoice</a>
+                                        <a class="tabButton">PRODUCT</a> 
+                                        <a class="tabButton">Purchase Order</a> 
+                                        <a class="tabButton">Sale Order</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 m-0 p-0 text-lg-end">
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="btn btn-outline-primary">Cancel</a>
+                                        <a href="#" class="btn btn-save">Save</a>
+                                        <a href="#" class="btn btn-primary">Back</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </main>
